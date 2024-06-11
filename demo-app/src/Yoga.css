@@ -1,0 +1,153 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    height: 100vh;
+}
+
+.heading {
+    width: 100%;
+    height: 100%;
+}
+  
+.nav {
+    height: auto; 
+    min-height: 60px;
+    display: flex;
+    background-color: #F9F9F9;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+  
+h4, h2 {
+    color: #333333;
+}
+  
+.nav a {
+    color: #333333;
+    text-decoration: none;
+}
+  
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    background-color: #00A28A;
+    font-size: 1rem;
+    font-family: verdana;
+    color: #170101;
+
+}
+button:hover{
+    background-color: #00A28A;
+    color: #fff;
+}
+  
+.nav-part2 {
+    display: flex;
+    gap: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-part2 {
+        margin-top: 1rem;
+    }
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap; 
+    height: 90%;
+    width: 100%;
+    position: relative;
+    background-color: #FFFFFF;
+}
+  
+.one {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    height: 100%;
+    width: 50%;
+}
+
+/* Media query for hero content */
+@media (max-width: 768px) {
+    .one {
+        width: 100%;
+    }
+}
+  
+.one h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-family: cambria;
+    color: #333333;
+}
+  
+.one h1 span {
+    color: #00A28A;
+}
+  
+.one p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+  
+.sec {
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .sec {
+        width: 100%;
+    }
+}
+  
+.one button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00A28A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.one button:hover{
+    background-color: #fff;
+    color: #00A28A;
+
+}
+  
+.sec img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
