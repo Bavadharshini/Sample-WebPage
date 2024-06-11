@@ -1,0 +1,27 @@
+.pricing-container {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+  }
+  
+  .pricing-card {
+    flex: 0 0 auto; 
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 10px; 
+    scroll-snap-align: start; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .pricing-card:last-child {
+    margin-right: 0;
+  }
+  
+ 
+  .pricing-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

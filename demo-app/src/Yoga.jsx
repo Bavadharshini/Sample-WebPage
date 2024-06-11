@@ -1,25 +1,25 @@
 import React from "react";
 import "./Yoga.css";
-import yogaImage from "./image/yogaimage2.jpg"
+import yogaImage from "./image/yogaimage2.jpg";
+import { Outlet ,Link} from "react-router-dom";
+
 
 export function Yoga() {
-  const showAlert = () => {
-    alert("Yoga link clicked!");
-  };
+
 
   return (
     <>
+    <div className="container">
       <div className="heading">
         <div className="nav">
           <h2>
-            <a href="#" onClick={showAlert}>Yoga</a>
+           <bold>Yogi</bold>
           </h2>
           <div className="nav-part2">
-            <h4>Home</h4>
-            <h4>About Us</h4>
-            <h4>Pricing</h4>
-            <h4>Blog</h4>
-            <h4>Contact</h4>
+            <Link to={"/aboutUs"}>About Us</Link>
+            <Link to={"/price"}>Price Details</Link>
+            <Link to={"/blog"}>Blog</Link>
+            <Link to={"/dailyDose"}>Daily Dose</Link>
           </div>
           <div>
             <button>Get Started</button>
@@ -31,12 +31,16 @@ export function Yoga() {
             <br />
             <p>Yoga is a powerful tool for healing and transformation that can change lives for the better. It is an ancient practice that has been around for thousands of years and is popular all around the world.</p>
             <br />
+            <Link to={"/register"}>
             <button>Join Now</button>
+            </Link>
           </div>
           <div className="sec">
             <img src={yogaImage} alt="Yoga" />
           </div>
+          <Outlet/>
         </div>
+      </div>
       </div>
     </>
   );
